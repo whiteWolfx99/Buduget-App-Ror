@@ -1,0 +1,17 @@
+<div class="container">
+<div>
+<div class="header">
+<div>
+  <%= link_to "Back", groups_path, class: "back-btn" %>
+</div>
+  <h1>
+    Show Categories
+  </h1>
+</div>
+
+<div id="groups" class="category-container">
+  <div class="category-col">
+     <%= render @group %>
+  </div>
+</div>
+</div>

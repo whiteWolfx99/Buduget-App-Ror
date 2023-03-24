@@ -1,0 +1,24 @@
+<div class="container">
+<div>
+<div class="header">
+  <h1>
+    Categories
+  </h1>
+      <% if user_signed_in? %>
+        <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "back-btn" %>
+      <% end %>
+</div>
+
+<div id="groups" class="category-container">
+  <% @groups.each do |group| %>
+  <div class="category-col">
+      <%= render group %>
+  </div>
+  <% end %>
+</div>
+</div>
+
+<div class="button-container">
+<%= link_to "New Category", new_group_path, class: "button" %>
+</div>
+</div>

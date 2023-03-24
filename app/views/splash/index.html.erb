@@ -1,0 +1,12 @@
+<div class="splash-container">
+  <div class="logo-container">
+   <%= image_tag "Dollar.png", width: "100px", height: "100px" %>
+    <h3 class="subtitle">Welcome</h3>
+    <p>Please create an account or log in</p>
+  </div>
+  <div class="button-container">
+    <%= link_to 'Sign up', new_user_registration_path,  class: 'sign-up-btn' %> 
+    <br>
+    <%= link_to 'Log in'.html_safe, new_user_session_path, class: 'log-in-btn' %>
+  </div>
+</div>
