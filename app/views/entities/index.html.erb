@@ -14,9 +14,13 @@
   <% @entities.each do |(user_id, group_id), entities| %>
 <div class="info">
 <div class="user-group">
-      <p><strong>Group:</strong>  <%= Group.find(group_id).name %></p>
+     <div class="bank">
+           <%= image_tag "group.svg", width: "40px", height: "40px" %>
+
+      <p> <%= Group.find(group_id).name %></p>
+     </div>
 </div>
-      <p><strong>Total:</strong>  <%= number_to_currency(@totals[[user_id, group_id]]) %></p>
+      <p>  <%= number_to_currency(@totals[[user_id, group_id]]) %></p>
 </div>
           <div class="category-container">
             <% entities.each do |entity| %>
