@@ -11,6 +11,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [Video presentation](#Video-presentation)  
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -59,6 +60,12 @@ The budget app is a mobile web application where you can manage your budget: you
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 [Budget App](https://budget-app.herokuapp.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Video presentation <a name="Video-presentation"></a>
+
+[Video presentation](https://drive.google.com/file/d/1gFFXjlGxdErqRo5lpQmKLBkFSAAA0STA/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
