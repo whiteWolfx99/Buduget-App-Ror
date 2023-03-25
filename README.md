@@ -64,7 +64,7 @@ The **Budget-app** The Ruby on Rails capstone project (remember what they are?) 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- N/A
+- [live demo](https://budget-app.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
