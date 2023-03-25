@@ -133,6 +133,17 @@ a {
   cursor: pointer;
 }
 
+.actions input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
 .form input[type="submit"]:hover {
   background-color: #0062cc;
 }
@@ -244,17 +255,6 @@ a {
 .actions {
   margin-top: 20px;
   text-align: center;
-}
-
-.actions input[type="submit"] {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
 }
 
 .actions input[type="submit"]:hover {
