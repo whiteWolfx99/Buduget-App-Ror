@@ -33,5 +33,7 @@
 </div>
 
 <div class="button-container">
-<%= link_to "New Transaction", new_group_entity_path(@group), class: "button" %>
+<%= link_to new_group_entity_path(@group), class: "button" do %>
+  <span>New Transaction</span>
+<% end %>
 </div>

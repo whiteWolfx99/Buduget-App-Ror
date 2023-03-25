@@ -12,7 +12,7 @@ p {
 }
 
 .container {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,7 +23,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #6302a8;
+  background-color: #3778c2;
   color: #fff;
   padding: 10px;
 }
@@ -59,26 +59,28 @@ a {
   color: #000;
 }
 
-.button-container {
-  padding-inline: 20px;
-}
-
 .button {
   display: block;
   width: 100%;
-  background-color: green;
+  background-color: #5fb523;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding-block: 30px;
   text-decoration: none;
   border: none;
-  border-radius: 5px;
   box-sizing: border-box;
+}
+
+.button span {
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+  padding-inline: 100px;
+  padding-block: 20px;
 }
 
 .back-btn {
   text-decoration: none;
-  background-color: #6302a8;
+  background-color: transparent;
   color: #fff;
   padding: 10px;
   border-radius: 5px;
@@ -86,7 +88,7 @@ a {
   cursor: pointer;
 }
 
-form {
+.form {
   padding: 20px;
   box-sizing: border-box;
 }
