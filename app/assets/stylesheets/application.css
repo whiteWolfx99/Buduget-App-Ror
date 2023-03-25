@@ -1,15 +1,262 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6302a8;
+  color: #fff;
+  padding: 10px;
+}
+
+.category-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.category-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.category-row p {
+  text-decoration: none;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.button-container {
+  padding-inline: 20px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.back-btn {
+  text-decoration: none;
+  background-color: #6302a8;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.form ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form li {
+  margin: 5px 0;
+}
+
+.form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="number"],
+.form input[type="file"],
+.form input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+}
+
+.form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.actions input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.icon-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6302a8;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.name-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.sign-up-btn {
+  background-color: #6302a8;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up-btn:hover {
+  background-color: #4d0296;
+}
+
+.log-in-btn {
+  background-color: #6302a8;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.log-in-btn:hover {
+  background-color: #4d0296;
+}
+
+.auth-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.field em {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #888;
+}
+
+.field input[type="email"],
+.field input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.actions input[type="submit"]:hover {
+  background-color: #0062cc;
+}

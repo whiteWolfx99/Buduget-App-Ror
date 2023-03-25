@@ -1,0 +1,14 @@
+<%= link_to group_path(group) + "/entities", class: "category-row" do %>
+  <div class="icon-name">
+    <% if group.icon.present? && Rails.application.assets_manifest.assets[group.icon].present? %>
+      <%= image_tag group.icon %>
+    <% else %>
+      <%= image_tag "Dollar.png", width: "40px", height: "40px" %>
+    <% end %>
+    <h3><%= group.name %></h3>
+  </div>
+    <p>
+    <strong>Total Amount:</strong>
+    <%= number_to_currency(group.entities.sum(:amount)) %>
+  </p>
+<% end %>
