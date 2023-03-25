@@ -14,7 +14,6 @@
   <% @entities.each do |(user_id, group_id), entities| %>
 <div class="info">
 <div class="user-group">
-      <p><strong>User:</strong> <%= User.find(user_id).name %></p>
       <p><strong>Group:</strong>  <%= Group.find(group_id).name %></p>
 </div>
       <p><strong>Total:</strong>  <%= number_to_currency(@totals[[user_id, group_id]]) %></p>
