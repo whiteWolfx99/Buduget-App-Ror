@@ -19,6 +19,8 @@
 </div>
 
 <div class="button-container">
-<%= link_to "New Category", new_group_path, class: "button" %>
+<%= link_to new_group_path, class: "button" do %>
+  <span>New Category</span>
+<% end %>
 </div>
 </div>
